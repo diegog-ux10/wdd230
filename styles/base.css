@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background-color: #1D4D72;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+    gap: 24px;
+}
+
+header img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+}
+
+header h1 {
+    color: white;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+nav a {
+    padding: 24px;
+    font-size: 32px;
+    color: white;
+}
+
+main h2 {
+    color: #4B4B53;
+    border-bottom: 1px solid #4B4B53;
+    padding-bottom: 9px;
+    width: 90%;
+    margin: 48px auto 32px;
+    font-size: 32px;
+}
+
+.card {
+    border: 1px solid #4B4B53;
+    border-radius: 12px;
+    margin: 0 auto 24px;
+    width: 90%;
+
+}
+
+.card h3 {
+    background-color: #1D4D72;
+    padding: 12px 0;
+    color: white;
+    font-size: 32px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.card ul {
+    width: 100%;
+    text-align: left;
+    padding: 32px 24px;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 0;
+}
+
+.card span {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+footer {
+    background-color:#1D4D72;
+    padding: 18px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+}
+
+footer p {
+    font-size: 24px;
+    color: white;
+}
+
+footer span {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+}
+
+footer > span:last-child p {
+    margin-top: 24px;
+    color: yellow;
+}
+
+
