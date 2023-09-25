@@ -14,10 +14,11 @@
   <link rel="icon" href="./images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Noto+Sans:wght@400;600&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/large.css" />
 </head>
 
 <body>
@@ -34,21 +35,23 @@
       <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/88">Scripture</a>
     </nav>
     <h2>WDD 230: Web Frontend Development</h2>
-    <section class="card">
-      <h3>Learning Activities</h3>
-      <ul>
-        <li>01: <a href="#">Holy Layout | JS Pen</a></li>
-        <li>02: <a href="#">Media Query | Design Principles Document</a></li>
-      </ul>
-    </section>
-    <section class="card">
-      <h3>Information</h3>
-      <div>
-        <span>Toloria, Madagascar</span>
-        <span>76ºF - Sunshine</span>
-        <span>Page Visits: 15</span>
-      </div>
-    </section>
+    <div class="cards-container">
+      <section class="card">
+        <h3>Learning Activities</h3>
+        <ul>
+          <li>01: <a href="#">Holy Layout | JS Pen</a></li>
+          <li>02: <a href="#">Media Query | Design Principles Document</a></li>
+        </ul>
+      </section>
+      <section class="card">
+        <h3>Information</h3>
+        <div>
+          <span>Toloria, Madagascar</span>
+          <span>76ºF - Sunshine</span>
+          <span>Page Visits: 15</span>
+        </div>
+      </section>
+    </div>
     <footer>
       <p><span>&cospany;</span><span id="year">2023</span></p>
       <p>Diego Granados</p>

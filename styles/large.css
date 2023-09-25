@@ -1,0 +1,17 @@
+@media screen and (min-width: 940px) {
+    nav {
+        flex-direction: row;
+    }
+
+    .cards-container {
+       display: flex;
+    }
+
+    .card:first-child {
+        width: 65%;
+    }
+
+    .card:last-child {
+        width: 25%;
+    }
+}
