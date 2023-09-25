@@ -1,0 +1,31 @@
+@media screen and (min-width: 1200px) {
+    main {
+      display: grid;
+      grid:
+        "header header header" auto
+        "card1 card2 card3" auto
+        "footer footer footer" auto/ 1fr 1fr 1fr;
+      gap: 80px;
+      grid-row: auto, 1fr, 1fr, auto;
+    }
+  
+    header {
+      grid-area: header;
+    }
+    .card.card1 {
+      grid-area: card1;
+    }
+  
+    .card.card2 {
+      grid-area: card2;
+    }
+  
+    .card.card3 {
+      grid-area: card3;
+    }
+  
+    footer {
+      grid-area: footer;
+    }
+  }
+  
