@@ -54,6 +54,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  display: none;
 }
 
 nav a {
@@ -139,4 +140,23 @@ footer span {
 footer > span:last-child p {
   margin-top: 24px;
   color: yellow;
+}
+
+#menu-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+}
+
+#menu-icon::before {
+	content: "☰";
+}
+
+#menu-icon.open::before {
+	content: "X";
+}
+
+.open {
+  display: block;
 }
