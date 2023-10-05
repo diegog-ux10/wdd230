@@ -158,5 +158,5 @@ footer > span:last-child p {
 }
 
 .open {
-  display: block;
+  display: flex;
 }
