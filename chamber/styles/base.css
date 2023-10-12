@@ -1,0 +1,118 @@
+:root {
+  /* Colors */
+  --color-light-blue: #64ccc5;
+  --color-blue: #176b87;
+  --color-dark-blue: #04364a;
+  --color-white: #dafffb;
+  /* Fonts */
+  --heading-font: "Heebo", sans-serif;
+  --body-font: "Lato", sans-serif;
+  /* spacing */
+  --sm-gap: 12px;
+}
+
+/* Reset default styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-blue);
+  font-weight: 700;
+  transition: color 0.8s;
+}
+
+a:hover {
+  color: var(--color-light-blue);
+}
+
+.bg-light-blue a {
+  color: var(--color-white);
+}
+
+.bg-light-blue a:hover {
+  color: var(--color-dark-blue);
+}
+
+/* assign headings font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+body,
+a,
+p {
+  font-family: var(--body-font);
+}
+
+
+img {
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* color classes */
+.bg-light-blue {
+  background-color: var(--color-light-blue);
+  color: var(--color-white);
+}
+/* padding classes */
+.p-sm {
+  padding: 1rem;
+}
+
+/* shadows */
+
+.box-shadow {
+  -webkit-box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* display classes */
+.flex {
+  display: flex;
+  gap: var(--sm-gap);
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.h-screen-20 {
+  height: 20vh;
+}
+
+.h-screen-80 {
+  height: 80vh;
+}
+/* text colors */
