@@ -92,6 +92,10 @@ img {
   justify-content: space-between;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .align-center {
   align-items: center;
 }
@@ -116,3 +120,76 @@ img {
   height: 80vh;
 }
 /* text colors */
+
+.cta-card_container {
+  position: relative;
+  height: 200px;
+  width: 60%;
+  z-index: 10;
+  margin: 0 auto;
+  margin-top: -100px;
+}
+
+.cta-card {
+  background-color: var(--color-dark-blue);
+  padding: 1rem;
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.cta-card:nth-child(2) {
+  background-color: var(--color-blue);
+}
+
+.cta-card:last-child{
+  background-color: var(--color-light-blue);
+}
+
+.cta-card:hover {
+  transition: all 0.5s;
+  background-color: black;
+}
+
+.cta-card:hover span {
+  transition: all 0.5s;
+  font-size: 3.5rem;
+}
+
+.cta-card span {
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cta-card h4 {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.event-card {
+  margin-bottom: 1rem;
+}
+
+.event-img_container {
+  width: 45%;
+}
+
+.event-content_container {
+  padding: var(--sm-gap);
+  width: 65%;
+  background-color: #04364a;
+}
+
+.event-img_container img {
+  width: 100%;
+  object-fit: cover;
+}
