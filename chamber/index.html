@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sta. Teresa Chamber of Commerce</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <meta property="og:title" content="Chamber Site">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://diegog-ux10.github.io/wdd230/chamber/">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1576471721322-443777eed875?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80">
+    <script defer src="./scripts/main.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Top Header -->
+        <div class="bg-primary pd-sm flex justify-btw">
+            <div>
+                <a href="">Register</a>
+                <a href="">Login</a>
+            </div>
+            <div id="menu-toggle">
+                <div class="icon active" id="menu-icon">&#9776;</div>
+                <div class="icon" id="close-icon">&#10006;</div>
+            </div>
+        </div>
+        <!-- Bottom Header -->
+        <nav class="bg-secondary pd-sm" id="main-nav">
+            <ul>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Image -->
+        <div class="hero-image flex center">
+            <!-- CTA -->
+            <a href="#" class="btn-primary">Register to be member</a>
+        </div>
+        <!-- Three Options Section -->
+        <section class="flex-col options-sec pd-sm">
+            <div class="flex justify-center  options-sec_cards-container">
+                <!-- Cards -->
+                <div class="card-nav">
+                    <p>Sponsors</p>
+                </div>
+                <div class="card-nav">
+                    <p>Events</p>
+                </div>
+                <div class="card-nav">
+                    <p>Weather</p>
+                </div>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore doloribus libero sequi inventore
+                    impedit quaerat accusantium fuga molestiae dolorem, quis, quas reprehenderit dolore, magnam
+                    exercitationem delectus sapiente veritatis consequatur voluptate. Repudiandae unde qui assumenda
+                    facilis consequatur recusandae harum alias suscipit, velit nostrum fugit laudantium neque corporis.
+                    Ipsa quam maiores impedit.</p>
+            </div>
+        </section>
+        <!-- Current Events -->
+        <section class="flex-col pd-sm event-sec">
+            <h2>Events</h2>
+            <!-- Event 01 Card -->
+            <div class="event-card">
+                <figure>
+                    <img src="./images/images.png" alt="">
+                </figure>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ullam.</p>
+                    <button>View Event</button>
+                </div>
+            </div>
+            <!-- Event 02 Card -->
+            <div class="event-card">
+                <figure>
+                    <img src="./images/images.png" alt="">
+                </figure>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem debitis totam dicta,
+                        consequatur cumque dolor?</p>
+                    <button>View Even</button>
+                </div>
+            </div>
+        </section>
+        <section class="sponsors-sec pd-sm">
+            <h2>Sponsors</h2>
+            <div>
+                <div class="sponsor-card"><img src="./images/images.png" alt=""></div>
+                <div class="sponsor-card"><img src="./images/images.png" alt=""></div>
+                <div class="sponsor-card"><img src="./images/images.png" alt=""></div>
+            </div>
+        </section>
+        <!-- Weather Card -->
+        <section>
+            <p>Weather|</p>
+        </section>
+    </main>
+    <footer class="bg-primary pd-sm flex-col">
+        <p>Developed by Your Full Name</p>
+        <p>WDD 230 Project</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

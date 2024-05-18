@@ -1,0 +1,43 @@
+@media (min-width: 945px) {
+  #main-nav {
+    display: flex;
+    width: 100vw;
+    opacity: 1;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
+  .icon {
+    display: none !important;
+  }
+
+  .hero-image {
+    height: 80vh;
+    background-image: url('../images/Santateresahannes (1).jpg');
+  }
+
+  .options-sec {
+    margin-top: -50px;
+  }
+
+  .event-card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sponsors-sec div {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+}
+}

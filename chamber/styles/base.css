@@ -1,0 +1,133 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* root variable */
+:root {
+  --primary-color: #04364a;
+  --secondary-color: #176b87;
+  --color-3: #64ccc5;
+  --color-4: #dafffb;
+
+  --heading: 'Ubuntu', sans-serif;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+#main-nav {
+  display: none; /* Inicialmente oculto */
+  position: absolute;
+  width: 100vw;
+  opacity: 0.8;
+  z-index: 100;
+}
+
+.hero-image {
+  width: 100%;
+  height: 50vh;
+  background-image: url('../images/Santateresahannes.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+  position: relative;
+}
+
+.options-sec {
+  position: relative;
+  margin-top: -30px;
+  z-index: 1;
+}
+
+.options-sec p {
+  text-align: center;
+}
+
+.options-sec_cards-container {
+  gap: 0.5rem;
+}
+
+.card-nav {
+  background-color: var(--color-3);
+  width: 25%;
+  aspect-ratio: 1/1;
+  text-align: center;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.sponsors-sec div {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* classes */
+
+.icon {
+  display: none;
+  cursor: pointer;
+}
+
+.active {
+  display: block !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.pd-sm {
+  padding: 1rem;
+}
+
+.full-w {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-btw {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: #04364a;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}

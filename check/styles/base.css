@@ -1,0 +1,7 @@
+span p {
+  font-size: 1.5rem;
+}
+
+.mark-complete::before {
+    content: '✔️';
+}
