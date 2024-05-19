@@ -22,7 +22,7 @@
 </head>
 <body>
   <header>
-    <span><img src="images/profile-image.jpg" alt=""></span>
+    <span><img src="images/profile-image.webp" alt=""></span>
     <h2>Diego Granados</h2>
   </header>
   <nav>
@@ -32,8 +32,17 @@
     <a href="">Form</a>
   </nav>
   <main>
+    <div class="hero-img">
+      <picture>
+        <source srcset="./images/hero-small.webp" media="(max-width: 960px)">
+        <img srcset="./images/hero-large.webp"" alt=" San Diego Temple">
+      </picture>
+      <div class="herolabel">
+        <p>San Diego Temple</p>
+      </div>
+    </div>
     <h1>WDD 230: Web Frontend Development</h1>
-    <section class="card">
+    <section class="card-01">
       <div>
         <h2>Learning Activities</h2>
       </div>
@@ -44,10 +53,11 @@
         <li>Week 02: <a href="./week02/design.html">Design Principles</a> | <a
             href="https://codepen.io/diegog-ux10/pen/xxeoEwX">CodePen</a> | <a href="./week02/bom.html">DOM</a></li>
         <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="./week03/lazyload.html">lazyload</a> |
-          <a href="./week03/responsive-images.html">Srcset</a> | <a href="./week03/bom.html">BOM 2</a></li>
+          <a href="./week03/responsive-images.html">Srcset</a> | <a href="./week03/bom.html">BOM 2</a>
+        </li>
       </ul>
     </section>
-    <section class="card">
+    <section class="card-02">
       <div>
         <h2>Information</h2>
       </div>
@@ -55,6 +65,10 @@
       <span>76ºF - Sunshine</span>
       <span id="pageVisits">Page Visits: 0</span>
     </section>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62816.14775865504!2d-66.74079505858501!3d10.260838213530873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2ae2ffe045d759%3A0x1fe5bd1ffddca150!2sSanta%20Teresa%2C%20Miranda%2C%20Venezuela!5e0!3m2!1ses-419!2sus!4v1716079303323!5m2!1ses-419!2sus"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
   </main>
   <footer>
     <p><span>&copy;<span id="year">2024</span></span>Diego Granados<span>Venezuela <img
