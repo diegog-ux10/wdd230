@@ -21,12 +21,38 @@ ul {
     list-style: none;
 }
 
-#main-nav {
+.top-header div {
+  display: flex;
+  gap: 3rem;
+} 
+
+.top-header div a {
+  color: white;
+}
+
+.top-header div a:hover {
+  transition: ease all 0.5s;
+  color: var(--color-3);
+}
+
+.bottom-header {
   display: none; /* Inicialmente oculto */
   position: absolute;
   width: 100vw;
   opacity: 0.8;
   z-index: 100;
+}
+
+.bottom-header ul li a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.bottom-header ul li a:hover {
+  transition: all ease 0.5s;
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 
 .hero-image {
@@ -53,6 +79,10 @@ ul {
   gap: 0.5rem;
 }
 
+.event-sec {
+  gap: 4rem;
+}
+
 .card-nav {
   background-color: var(--color-3);
   width: 25%;
@@ -65,6 +95,11 @@ ul {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background-color: var(--primary-color);
+}
+
+.event-card picture img {
+  height: 100%;
 }
 
 .sponsors-sec div {
@@ -127,4 +162,51 @@ ul {
   color: white;
   padding: 0.5rem;
   border-radius: 5px;
+}
+
+.grid-container {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px; 
+  margin: 0 auto; 
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.sidebar h2 {
+  color: #333;
+}
+
+.sidebar-section {
+  margin-bottom: 20px;
+}
+
+.sidebar-section h3 {
+  color: #007bff; /* Blue color for section headings */
+  border-bottom: 2px solid #007bff; /* Underline effect */
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.sidebar-section p {
+  color: #555;
+}
+
+.sidebar-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-section ul li {
+  margin-bottom: 5px;
+}
+
+.sidebar-section ul li:hover {
+  color: #007bff;
+  cursor: pointer;
 }
