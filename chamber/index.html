@@ -8,6 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/normalize.css">
@@ -35,40 +43,49 @@
             </div>
         </div>
         <!-- Bottom Header -->
-        <nav class="bg-secondary pd-sm bottom-header" id="main-nav">
+        <nav class="pd-sm bottom-header" id="main-nav">
+            <a href="#">
+                <img src="./images/logo.jpg" alt="" width="200" />
+            </a>
             <ul>
-                <li><a href="">Link 1</a></li>
-                <li><a href="">Link 2</a></li>
-                <li><a href="">Link 3</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="./form.html">Apply Membership</a></li>
+                <li><a href="./discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- Hero Image -->
-        <div class="hero-image flex center">
-            <!-- CTA -->
-            <a href="#" class="btn-primary">Register to be member</a>
-        </div>
-        <!-- Three Options Section -->
-        <div class="flex-col options-sec pd-sm">
-            <div class="flex justify-center  options-sec_cards-container">
-                <!-- Cards -->
-                <div class="card-nav">
-                    <p>Sponsors</p>
+        <!-- Slider main container -->
+        <div class="swiper w-full h-screen-80">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./images/100_7770.jpeg" alt="" class="w-full" />
                 </div>
-                <div class="card-nav">
-                    <p>Events</p>
+                <div class="swiper-slide">
+                    <img src="./images/5508844329_83ddc4411a_b (1).jpg" alt="" class="w-full" />
                 </div>
-                <div class="card-nav">
-                    <p>Weather</p>
+                <div class="swiper-slide">
+                    <img src="./images/8445757779_1800070f1b_b (1).jpg" alt="" class="w-full" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/Santateresahannes.jpg" alt="" class="w-full" />
                 </div>
             </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore doloribus libero sequi inventore
-                    impedit quaerat accusantium fuga molestiae dolorem, quis, quas reprehenderit dolore, magnam
-                    exercitationem delectus sapiente veritatis consequatur voluptate. Repudiandae unde qui assumenda
-                    facilis consequatur recusandae harum alias suscipit, velit nostrum fugit laudantium neque corporis.
-                    Ipsa quam maiores impedit.</p>
+        </div>
+        <div class="flex justify-center cta-card_container">
+            <div class="cta-card box-shadow">
+                <span class="material-symbols-outlined"> badge </span>
+                <h4>Member Directory</h4>
+            </div>
+            <div class="cta-card box-shadow">
+                <span class="material-symbols-outlined"> edit_square </span>
+                <h4>Join</h4>
+            </div>
+            <div class="cta-card box-shadow">
+                <span class="material-symbols-outlined"> calendar_month </span>
+                <h4>Events</h4>
             </div>
         </div>
         <!-- Current Events -->
@@ -99,9 +116,12 @@
         <section class="sponsors-sec pd-sm">
             <h2>Sponsors</h2>
             <div>
-                <div class="sponsor-card"><img src="//via.placeholder.com/200x100/" alt=""></div>
-                <div class="sponsor-card"><img src="//via.placeholder.com/200x100/" alt=""></div>
-                <div class="sponsor-card"><img src="//via.placeholder.com/200x100/" alt=""></div>
+                <div class="sponsor-card"><img src="./images/sponsor1.png" alt=""></div>
+                <div class="sponsor-card"><img src="./images/sponsor2.png" alt=""></div>
+                <div class="sponsor-card"><img src="./images/sponsor3.png" alt=""></div>
+                <div class="sponsor-card"><img src="./images/sponsor4.png" alt=""></div>
+                <div class="sponsor-card"><img src="./images/sponsor5.png" alt=""></div>
+                <div class="sponsor-card"><img src="./images/sponsor6.png" alt=""></div>
             </div>
         </section>
         <!-- Weather Card -->
@@ -115,5 +135,6 @@
         <p>WDD 230 Project</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
+    <script type="module" src="./scripts/swiper.js"></script>
 </body>
 </html>
