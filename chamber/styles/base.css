@@ -129,7 +129,7 @@ img {
 }
 
 .cta-card:last-child {
-  background-color: var(--color-4);
+  background-color: var(--secondary-color);
 }
 
 .cta-card:hover {
