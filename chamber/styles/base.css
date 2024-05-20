@@ -108,6 +108,11 @@ ul {
   gap: 4rem;
 }
 
+footer {
+  color: white;
+  text-align: center;
+}
+
 /* classes */
 
 .icon {
@@ -213,14 +218,20 @@ ul {
 
 /* Form styles */
 
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+  gap: 4rem;
+}
+
 form {
   width: 100%;
-  max-width: 600px;
-  padding: 20px;
-  background-color: var(--main-bg-color);
+  max-width: 800px;
+  padding: 2rem;
+  background-color: var(--secondary-color);
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  color: white;
 }
 
 fieldset {
@@ -258,15 +269,15 @@ textarea {
 input[type='submit'] {
   margin-top: 20px;
   padding: 10px;
-  background-color: var(--button-bg-color);
-  color: var(--button-text-color);
+  background-color: var(--color-3);
+  color: var(--primary-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 input[type='submit']:hover {
-  background-color: darkgreen;
+  background-color: var(--color-4);
 }
 
 aside {
