@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Diego Granados - Course assignment portal">
+    <meta name="author" content="Diego Granados">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/form.css">
+</head>
+<body>
+    <header>
+        <span><img src="images/profile-image.webp" alt=""></span>
+        <h2>Diego Granados</h2>
+    </header>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="">Chamber</a>
+        <a href="">Site Plan</a>
+        <a href="">Form</a>
+    </nav>
+    <main>
+        <form method="get" action="record.html" id="userForm">
+            <span id="formmsg"></span>
+            <fieldset>
+                <legend>📑 Contact Us Form</legend>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}"
+                    title="Password must be at least 8 characters long and can only be alphanumeric.">
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                    title="Please enter a valid email address from the byui.edu domain.">
+
+                <label for="rating">Page Rating: <span id="ratingValue">5</span></label>
+                <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5"
+                    oninput="document.getElementById('ratingValue').textContent = this.value">
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p><span>&copy;<span id="year">2024</span></span>Diego Granados<span>Venezuela <img
+                    src="./images/venezuela-flag.png" alt="venezuela-flag" width="20"></span></p>
+        <p><span>Last Modifitaction:</span><span id="lastModified"></span></p>
+    </footer>
+    <script src="/scripts/form.js"></script>
+</body>
+</html>

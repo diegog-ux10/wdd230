@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid #E5E5E5;
+            padding: 8px;
+            text-align: left;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        th {
+            background-color: #000000;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 4px;
+        }
+
+        th[colspan = "4"] {
+            text-align: center;
+        }
+
+        thead tr:last-child th {
+            background-color: #333333;
+            border: 1px solid #2c2c2c;
+        }
+
+        thead tr:last-child th:first-child {
+            background-color: #000000;
+            border: none;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #EEEEEE;
+        }
+
+    
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">ACM Wildest Services</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Basic</th>
+                <th>Premium</th>
+                <th>Deluxe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Feature 1</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+            </tr>
+            <tr>
+                <td>Feature 2</td>
+                <td>❌</td>
+                <td>✔️</td>
+                <td>✔️</td>
+            </tr>
+            <tr>
+                <td>Feature 3</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>✔️</td>
+            </tr>
+        </tbody>
+        <caption>Table 1: Account Feature Comparison</caption>
+    </table>
+</body>
+</html>
