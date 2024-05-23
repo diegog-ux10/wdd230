@@ -1,0 +1,23 @@
+{
+  "familyName": "Granados",
+  "movedInDate": "Febrary 4th, 2024",
+  "membersCount": 3,
+  "visitedByBishopric": false,
+  "members": [
+    {
+      "name": "Diego Granados",
+      "age": 31,
+      "birthdate": "November 18th, 1992"
+    },
+    {
+      "name": "Bella Rosales",
+      "age": 24,
+      "birthdate": "January 2th, 2000"
+    },
+    {
+      "name": "Ariadna Granados",
+      "age": 6,
+      "birthdate": "August 22th, 2017"
+    }
+  ]
+}
