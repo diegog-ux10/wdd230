@@ -38,6 +38,26 @@
   .event-card {
     flex-direction: row;
     justify-content: space-between;
+    height: 350px;
+  }
+
+  .event-card .event_image-container {
+    width: 45%;
+    height: 100%;
+  }
+
+  .event-card .event_info-container {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+  }
+
+  .event-card .event_image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 
   .sponsors-sec div {
@@ -62,7 +82,7 @@
     width: 60%;
     margin-top: -100px;
   }
-  
+
   .cta-card {
     width: 33.33%;
     height: 100%;
@@ -74,13 +94,23 @@
     gap: 4rem;
     padding: 2rem 0;
   }
-  
+
   .sponsor-card {
     width: 25%;
   }
-  
+
   .sponsor-card img {
     width: 100%;
     object-fit: cover;
+  }
+  
+  .grid-view {
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .list-view {
+    gap: 1rem;
+    padding: 1rem;
   }
 }

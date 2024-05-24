@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="show"></span>
+    <script>
+        const url = "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json"
+        const span = document.getElementById('show')
+        const getHeros = async () => {
+            let power
+            const res = await fetch(url)
+            const supers = await res.json()
+            power = supers.members.find(item => item.name === "Eternal Flame").powers[1]
+            span.textContent = power
+
+        }
+
+        getHeros()
+    </script>
+</body>
+</html>

@@ -108,6 +108,10 @@ main .card-01, main .card-02 {
   box-shadow: 0px 3px 22px 0px rgba(0,0,0,0.75);
 }
 
+main .card-01, main .card-02{
+  text-align: center;
+}
+
 main .card-01 div, main .card-02 div{
   background-color: #1d4d72;
   text-align: center;

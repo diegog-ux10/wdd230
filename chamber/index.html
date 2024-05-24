@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sta. Teresa Chamber of Commerce</title>
+    <meta name="description" content="Chamber site for Santa Teresa">
+    <meta name="author" content="Diego Granados">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
@@ -44,12 +41,12 @@
         </div>
         <!-- Bottom Header -->
         <nav class="pd-sm bottom-header" id="main-nav">
-            <a href="#">
+            <a href="./index.html">
                 <img src="./images/logo.jpg" alt="" width="200" />
             </a>
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="./form.html">Apply Membership</a></li>
+                <li><a href="./join.html">Apply Membership</a></li>
                 <li><a href="./discover.html">Discover</a></li>
             </ul>
         </nav>
@@ -57,6 +54,10 @@
     <main>
         <!-- Slider main container -->
         <div class="swiper w-full h-screen-80">
+            <div class="overlay">
+                <h1>Santa Teresa Chamber of Commerce</h1>
+                <button>Join us!</button>
+            </div>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -75,10 +76,10 @@
             </div>
         </div>
         <div class="flex justify-center cta-card_container">
-            <div class="cta-card box-shadow">
+            <a href="./directory.html" class="cta-card box-shadow">
                 <span class="material-symbols-outlined"> badge </span>
                 <h4>Member Directory</h4>
-            </div>
+            </a>
             <div class="cta-card box-shadow">
                 <span class="material-symbols-outlined"> edit_square </span>
                 <h4>Join</h4>
@@ -93,20 +94,20 @@
             <h2>Events</h2>
             <!-- Event 01 Card -->
             <div class="event-card">
-                <picture>
-                    <img src="//via.placeholder.com/400x200/" alt="">
-                </picture>
-                <div>
+                <div class="event_image-container">
+                    <img src="./images/5508844329_83ddc4411a_b.jpg" alt="">
+                </div>
+                <div class="event_info-container pd-sm">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ullam.</p>
                     <button>View Event</button>
                 </div>
             </div>
             <!-- Event 02 Card -->
             <div class="event-card">
-                <picture>
-                    <img src="//via.placeholder.com/400x200/" alt="">
-                </picture>
-                <div>
+                <div class="event_image-container">
+                    <img src="./images/8445757779_1800070f1b_b (1).jpg" alt="">
+                </div>
+                <div class="event_info-container pd-sm">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem debitis totam dicta,
                         consequatur cumque dolor?</p>
                     <button>View Even</button>
@@ -114,27 +115,33 @@
             </div>
         </section>
         <section class="sponsors-sec pd-sm">
-            <h2>Sponsors</h2>
+            <h2>Company Spotlights</h2>
             <div>
                 <div class="sponsor-card"><img src="./images/sponsor1.png" alt=""></div>
                 <div class="sponsor-card"><img src="./images/sponsor2.png" alt=""></div>
                 <div class="sponsor-card"><img src="./images/sponsor3.png" alt=""></div>
                 <div class="sponsor-card"><img src="./images/sponsor4.png" alt=""></div>
                 <div class="sponsor-card"><img src="./images/sponsor5.png" alt=""></div>
-                <div class="sponsor-card"><img src="./images/sponsor6.png" alt=""></div>
+                <div class="sponsor-card"><img src="./images/sponsor6.jpg" alt=""></div>
             </div>
         </section>
         <!-- Weather Card -->
-        <section>
+        <section class="weather-sex pd-sm">
             <h2>Weather</h2>
-            <p>Weather|</p>
+            <div>
+                <img src="" alt="" id="icon">
+                <span id="description"></span>
+                <span id="temperature"></span>
+            </div>
         </section>
     </main>
     <footer class="bg-primary pd-sm flex-col">
-        <p><span id="year"></span> Developed by Your Diego Granados</p>
-        <p>WDD 230 Project</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
+        <address>Contact us at 🖂 santateresachamber@example.org | Tel 🖁+1(230)123-5555</address>
+        <span>&copy;<span id="year"></span> Santa Teresa Chamber|<strong> Diego Granados </strong> | WDD 230
+            Project</span>
+        Last Modified: <span id="lastModified"></span>
     </footer>
     <script type="module" src="./scripts/swiper.js"></script>
+    <script type="module" src="./scripts/weather.js"></script>
 </body>
 </html>

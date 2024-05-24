@@ -27,7 +27,7 @@
   </header>
   <nav>
     <a href="">Home</a>
-    <a href="">Chamber</a>
+    <a href="./chamber/">Chamber</a>
     <a href="">Site Plan</a>
     <a href="./form.html">Form</a>
   </nav>
@@ -35,7 +35,7 @@
     <div class="hero-img">
       <picture>
         <source srcset="./images/hero-small.webp" media="(max-width: 960px)">
-        <img srcset="./images/hero-large.webp"" alt=" San Diego Temple">
+        <img src="./images/hero-large.webp" alt="San Diego Temple">
       </picture>
       <div class="herolabel">
         <p>San Diego Temple</p>
@@ -46,25 +46,18 @@
       <div>
         <h2>Learning Activities</h2>
       </div>
-      <ul>
-        <li>Week 01: <a href="./week01/holygrail.html">Layout</a> | <a
-            href="https://codepen.io/diegog-ux10/pen/bGJPVgx">CodePen | <a
-              href="./week01//media-query.html">Queries</a></a></li>
-        <li>Week 02: <a href="./week02/design.html">Design Principles</a> | <a
-            href="https://codepen.io/diegog-ux10/pen/xxeoEwX">CodePen</a> | <a href="./week02/bom.html">DOM</a></li>
-        <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="./week03/lazyload.html">lazyload</a> |
-          <a href="./week03/responsive-images.html">Srcset</a> | <a href="./week03/bom.html">BOM 2</a>
-        </li>
-        <li>Week 04: <a href="https://codepen.io/diegog-ux10/pen/qBGbLaJ" target="_blank">CodePen</a> | <a href="./images/Screenshot_23.png" target="_blank">Combinators</a> | <a href="./week04/tablebuild.html">Table</a></li>
-        <li>Week 05: <a href="https://codepen.io/diegog-ux10/pen/PovzVKz" target="_blank">CodePen</a> | <a href="./week05/new-ward-members.json">JSON</a></li>
+      <ul id="learning-activities-list">
+      
       </ul>
     </section>
     <section class="card-02">
       <div>
         <h2>Information</h2>
       </div>
-      <span>Toloria, Madagascar</span>
-      <span>76ºF - Sunshine</span>
+      <span>Santa Teresa</span>
+      <span id="temperature"></span>
+      <span id="icon"></span>
+      <span id="description"></span>
       <span id="pageVisits">Page Visits: 0</span>
     </section>
     <iframe
@@ -78,5 +71,8 @@
     <p><span>Last Modifitaction:</span><span id="lastModified"></span></p>
   </footer>
   <script src="./scripts/getDates.js"></script>
+  <script src="./scripts/weather.js"></script>
+  <script src="./scripts/visitors.js"></script>
+  <script src="./scripts/links.js"></script>
 </body>
 </html>
