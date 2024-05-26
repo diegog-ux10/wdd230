@@ -4,9 +4,14 @@
     <link rel="icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sta. Teresa Chamber of Commerce</title>
+    <title>Sta. Teresa Chamber of Commerce Discover Page</title>
+    <meta name="description" content="Discover pages for Chamber site for Santa Teresa">
+    <meta name="author" content="Diego Granados">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
@@ -35,15 +40,19 @@
             </div>
         </div>
         <!-- Bottom Header -->
-        <nav class="bg-secondary pd-sm bottom-header" id="main-nav">
+        <nav class="pd-sm bottom-header" id="main-nav">
+            <a href="./index.html">
+                <img src="./images/logo.jpg" alt="" width="200" />
+            </a>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./form.html">Apply  to Membership</a></li>
-                <li><a href="">Discover</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="./join.html">Apply Membership</a></li>
+                <li><a href="./discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
     <div class="grid-container">
+        <h1>Discover Page</h1>
         <div class="sidebar">
             <h2>Sidebar Content</h2>
             <section id="messageContainer"></section>
@@ -114,10 +123,12 @@
     </div>
     
     <footer class="bg-primary pd-sm flex-col">
-        <p>Developed by Your Full Name</p>
-        <p>WDD 230 Project</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
+        <address>Contact us at 🖂 santateresachamber@example.org | Tel 🖁+1(230)123-5555</address>
+        <span>&copy;<span id="year"></span> Santa Teresa Chamber|<strong> Diego Granados </strong> | WDD 230
+            Project</span>
+        Last Modified: <span id="lastModified"></span>
     </footer>
-    <script type="module" src="./scripts/date.js"></script>
+    <script type="module" src="./scripts/swiper.js"></script>
+    <script type="module" src="./scripts/weather.js"></script>
 </body>
 </html>
