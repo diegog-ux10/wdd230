@@ -56,7 +56,7 @@
         <div class="swiper w-full h-screen-80">
             <div class="overlay">
                 <h1>Santa Teresa Chamber of Commerce</h1>
-                <button>Join us!</button>
+                <button class="btn-primary">Join us!</button>
             </div>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -99,7 +99,7 @@
                 </div>
                 <div class="event_info-container pd-sm">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ullam.</p>
-                    <button>View Event</button>
+                    <button class="btn-secondary">View Event</button>
                 </div>
             </div>
             <!-- Event 02 Card -->
@@ -110,28 +110,25 @@
                 <div class="event_info-container pd-sm">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem debitis totam dicta,
                         consequatur cumque dolor?</p>
-                    <button>View Even</button>
+                    <button class="btn-secondary">View Even</button>
                 </div>
             </div>
         </section>
         <section class="sponsors-sec pd-sm">
             <h2>Company Spotlights</h2>
-            <div>
-                <div class="sponsor-card"><img src="./images/sponsor1.png" alt=""></div>
-                <div class="sponsor-card"><img src="./images/sponsor2.png" alt=""></div>
-                <div class="sponsor-card"><img src="./images/sponsor3.png" alt=""></div>
-                <div class="sponsor-card"><img src="./images/sponsor4.png" alt=""></div>
-                <div class="sponsor-card"><img src="./images/sponsor5.png" alt=""></div>
-                <div class="sponsor-card"><img src="./images/sponsor6.jpg" alt=""></div>
-            </div>
+            <div id="sponsors-container"></div>
         </section>
         <!-- Weather Card -->
-        <section class="weather-sex pd-sm">
+        <section class="weather-sec pd-sm">
             <h2>Weather</h2>
             <div>
-                <img src="" alt="" id="icon">
-                <span id="description"></span>
-                <span id="temperature"></span>
+                <div class="today-weather">
+                    <h3>Today's Weather</h3>
+                    <img src="" alt="Weather icon" id="icon">
+                    <span id="description"></span>
+                    <span id="temperature"></span>
+                </div>
+                <div class="forecast" id="forecast"></div>
             </div>
         </section>
     </main>
@@ -143,5 +140,6 @@
     </footer>
     <script type="module" src="./scripts/swiper.js"></script>
     <script type="module" src="./scripts/weather.js"></script>
+    <script src="./scripts/spotlight.js"></script>
 </body>
 </html>
